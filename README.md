@@ -4,13 +4,13 @@ Technical Proof of Concept that React and Servlet can pass around data with HTTP
 
 ## API Scheme
 
-```
+```http
 GET /java-backend/lookupwithlastname?lastName=Cho
 ```
 
 - Returns if User data if User if found with ;ast name.
 
-```
+```http
 GET /java-backend/userexists?firstname=Sunghyun&lastname=Cho
 ```
 
@@ -34,7 +34,7 @@ GET /java-backend/userexists?firstname=Sunghyun&lastname=Cho
 GET /java-backend/userexists?firstname=Sunghyun&lastname=Cho
 ```
 
-Returns
+- Returns
 
 ```json
 {
@@ -50,7 +50,7 @@ Returns
 GET /java-backend/userexists?firstname=Richard&lastname=Hendricks
 ```
 
-Retruns
+- Returns
 
 ```json
 {
