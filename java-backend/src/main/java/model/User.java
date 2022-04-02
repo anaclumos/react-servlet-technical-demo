@@ -1,19 +1,19 @@
 package model;
 
 public class User {
-  private String firstName;
-  private String lastName;
+  private String firstname;
+  private String lastname;
 
   public User(String first_name, String last_name) {
-    this.firstName = first_name;
-    this.lastName = last_name;
+    this.firstname = first_name;
+    this.lastname = last_name;
   }
 
   public String getFirstName() {
-    return firstName;
+    return firstname;
   }
 
   public String getLastName() {
-    return lastName;
+    return lastname;
   }
 }
