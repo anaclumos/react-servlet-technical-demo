@@ -1,0 +1,31 @@
+{
+  "name": "anaclumos",
+  "version": "1.0.0",
+  "description": "anaclumos",
+  "main": "index.js",
+  "repository": "github.com/anaclumos/typescript-next-template",
+  "author": "anaclumos",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development && next dev",
+    "build": "NODE_ENV=production && next build",
+    "start": "NODE_ENV=production && next start",
+    "warp": "NODE_ENV=development && yarn open-browser && next dev",
+    "open-browser": "open http://localhost:3000"
+  },
+  "dependencies": {
+    "next": "12",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1",
+    "styled-normalize": "^8.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@types/styled-components": "^5.1.7",
+    "babel-plugin-styled-components": "^1.12.0",
+    "typescript": "^4.1.5"
+  }
+}
