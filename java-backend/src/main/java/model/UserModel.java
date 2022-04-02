@@ -25,6 +25,11 @@ public class UserModel {
     users.add(user);
   }
 
+  public void addUser(String firstname, String lastname) {
+    User user = new User(firstname, lastname);
+    users.add(user);
+  }
+
   public User getUser(int index) {
     return users.get(index);
   }
@@ -37,10 +42,20 @@ public class UserModel {
     users.remove(index);
   }
 
-  public String getLastNameWithFirstName(String firstName) {
+  public User getUserWithLastName(String lastname) {
     for (User user : users) {
-      if (user.getFirstName().equals(firstName)) {
-        return user.getLastName();
+      if (user.getLastName().toLowerCase().equals(lastname.toLowerCase())) {
+        return user;
+      }
+    }
+    return null;
+  }
+
+  public User exists(String firstname, String lastname) {
+    for (User user : users) {
+      if (user.getFirstName().toLowerCase().equals(firstname.toLowerCase())
+          && user.getLastName().toLowerCase().equals(lastname.toLowerCase())) {
+        return user;
       }
     }
     return null;
