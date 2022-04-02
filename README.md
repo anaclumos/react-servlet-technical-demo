@@ -1,4 +1,4 @@
-# react-servlet-technical-demo
+# React Servlet Technical Demo
 
 Technical Proof of Concept that React and Servlet can pass around data with HTTP JSON API
 
@@ -8,7 +8,7 @@ Technical Proof of Concept that React and Servlet can pass around data with HTTP
 GET /java-backend/lookupwithlastname?lastName=Cho
 ```
 
-- Returns if User data if User if found with ;ast name.
+- Returns if User data if User if found with last name.
 
 ```http
 GET /java-backend/userexists?firstname=Sunghyun&lastname=Cho
@@ -18,7 +18,7 @@ GET /java-backend/userexists?firstname=Sunghyun&lastname=Cho
 
 ## JSON Scheme
 
-```
+```json
 {
   "isOk": true,
   "User": {
