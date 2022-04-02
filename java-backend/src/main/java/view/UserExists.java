@@ -23,6 +23,8 @@ public class UserExists extends HttpServlet {
     String firstname = request.getParameter("firstname");
     String lastname = request.getParameter("lastname");
 
+    System.out.println("fullname: " + firstname + " " + lastname);
+
     if (firstname == null || lastname == null) {
       response.getWriter().print(jsonTranspiler.bad());
     } else {

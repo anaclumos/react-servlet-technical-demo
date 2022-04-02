@@ -22,6 +22,8 @@ public class LookupWithLastname extends HttpServlet {
 
     String lastname = request.getParameter("lastname");
 
+    System.out.println("lastname: " + lastname);
+
     if (lastname == null) {
       response.getWriter().print(jsonTranspiler.bad());
     } else {
